@@ -1,6 +1,7 @@
 import torch
 from torch.utils import data
-
+import matplotlib.pyplot as plt
+import numpy as np
 
 class FizBuzDataSet(data.Dataset):
     """
@@ -59,3 +60,9 @@ def print_out(epoch, x, pred, loss):
     pred_print = f'Prediction: {pred:8s}'
     loss_print = f'loss: {loss:5.3f}'
     print(f'{epoch_print} | {input_print} | {pred_print} | {loss_print}')
+
+    
+    
+def imshow(img):
+    npimg = img.numpy()
+    plt.imshow(np.transpose(npimg, (1, 2, 0)))
