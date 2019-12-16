@@ -64,7 +64,7 @@ six==1.11.0
 spacy==2.0.9
 tensorboard==1.6.0
 tensorboardX==1.1
-tensorflow==1.12.2
+tensorflow==1.15.0
 termcolor==1.1.0
 terminado==0.8.1
 testpath==0.3.1
